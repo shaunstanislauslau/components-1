@@ -73,7 +73,7 @@ const passiveEventListenerOptions = normalizePassiveListenerOptions({passive: tr
 @Directive({
   selector: `[mat-menu-trigger-for], [matMenuTriggerFor]`,
   host: {
-    'aria-haspopup': 'true',
+    'aria-haspopup': 'menu',
     '[attr.aria-expanded]': 'menuOpen || null',
     '(mousedown)': '_handleMousedown($event)',
     '(keydown)': '_handleKeydown($event)',
